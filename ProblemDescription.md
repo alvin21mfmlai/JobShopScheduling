@@ -24,12 +24,12 @@ The two standard formulations for JSSP are presented as follows:
 ### 2.1 Disjunctive model
 Consider a set J jobs and a set M machines. 
 
-Premise:
+#### Premise:
 Each job j must follow a processing order (σʲ₁, σʲ₂, …, σʲₖ) and each operation (m, j) has a processing time p. 
 
-Decision variables: 
+#### Decision variables: 
   - Time that job j starts on machine m, xₘⱼ
   - Binary that marks precedence of job i before j on machine m, zₘᵢⱼ
 
-Objective function: 
+#### Objective function: 
 Total makespan of operation, C; minimize C
