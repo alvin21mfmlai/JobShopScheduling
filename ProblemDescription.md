@@ -18,4 +18,4 @@ The figure below illustrates an optimal sequence of operations for a simple inst
 
 ![image](https://user-images.githubusercontent.com/70025024/236583834-a09c0810-733e-4e90-8c19-b5be4798a7d1.png)
 
-
+## 2. Formulations for JSSP
