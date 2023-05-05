@@ -14,4 +14,7 @@ For example, consider two jobs (J1, J2), and four machines (M1, M2, M3, M4) wher
   - Each operation is defined by pairs (machine, job), and each has a specific processing time (p)
   - Total makespan depends on how one allocate resources to perform the tasks/operations
 
-The figure below illustrates an optimal sequence of operations for a simple instance with 5 machines and 4 jobs. Notice that each machine processes just one job at a time and each job is processed by only one machine at a time.
+The figure below illustrates an optimal sequence of operations for a simple instance with five machines and four jobs. Note that (1) each machine processes just one job at a time, and (2) each job is processed by only one machine at a time.
+
+![image](https://user-images.githubusercontent.com/70025024/236583834-a09c0810-733e-4e90-8c19-b5be4798a7d1.png)
+
