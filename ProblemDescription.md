@@ -36,6 +36,15 @@ Total makespan of operation, C; minimize C
 
 #### Constraints: 
   - The starting time of job j in machine m must be greater than the starting time of the previous operation of job j plus its processing time.
-  - Each machine processes just one job at a time. To do this, we state that if i precedes j in machine m, the starting time of job j in machine m must be greater than or equal to the starting time of job i plus its processing time.
-  - Of every pair of jobs i, j one element must precede the other for each machine m in M.
-  - The total makespan is greater than the starting time of every operation plus its processing time.
+  - Each machine processes just one job at a time. Hence, if i precedes j in machine m, the starting time of job j in machine m must be greater than or equal to the starting time of job i plus its processing time.
+  - Of every pair of jobs i, j, one element must precede the other for each machine m in M.
+  - The total makespan (C) is greater than the starting time of every operation plus its processing time.
+
+〖minimize 〗⁡C
+subjected to: 
+x_(σ_(h-1)^j,j)+p_(σ_(h-1)^j,j)≤x_(σ_h^j,j),                    ∀ j∈J;h∈(2,…,|M|)
+x_(m,j)+p_(m,j)≤x_(m,k)+V(1-z_(m,j,k) ),                    ∀ j,k∈J,j≠k;m∈M
+z_(m,j,k)+z_(m,k,j)=1,                    ∀ j,k∈J,j≠k;m∈M
+x_(σ_(|M|)^j,j)+p_(σ_(|M|)^j,j)≤C,                    ∀ j∈J
+x_(m,j)≥0,                    ∀ j∈J;m∈M
+z_(m,j,k)∈{0,1},                    ∀ j,k∈J;m∈M
