@@ -33,3 +33,9 @@ Each job j must follow a processing order (σʲ₁, σʲ₂, …, σʲₖ) and e
 
 #### Objective function: 
 Total makespan of operation, C; minimize C
+
+#### Constraints: 
+  - The starting time of job j in machine m must be greater than the starting time of the previous operation of job j plus its processing time.
+  - Each machine processes just one job at a time. To do this, we state that if i precedes j in machine m, the starting time of job j in machine m must be greater than or equal to the starting time of job i plus its processing time.
+  - Of every pair of jobs i, j one element must precede the other for each machine m in M.
+  - The total makespan is greater than the starting time of every operation plus its processing time.
