@@ -40,17 +40,4 @@ Total makespan of operation, C; minimize C
   - Of every pair of jobs i, j, one element must precede the other for each machine m in M.
   - The total makespan (C) is greater than the starting time of every operation plus its processing time.
 
-〖minimize 〗⁡C
-subjected to: 
-
-$x_(σ_(h-1)^j,j)+p_(σ_(h-1)^j,j)≤x_(σ_h^j,j), ∀ j∈J;h∈(2,…,|M|)$
-
-$x_(m,j)+p_(m,j)≤x_(m,k)+V(1-z_(m,j,k) ), ∀ j,k∈J,j≠k;m∈M$
-
-$z_(m,j,k)+z_(m,k,j)=1, ∀ j,k∈J,j≠k;m∈M$
-
-$x_(σ_(|M|)^j,j)+p_(σ_(|M|)^j,j)≤C, ∀ j∈J$
-
-$x_(m,j)≥0, ∀ j∈J;m∈M$
-
-$z_(m,j,k)∈{0,1}, ∀ j,k∈J;m∈M$
+![image](https://user-images.githubusercontent.com/70025024/236586894-d24f751e-fcf5-4e2a-beba-ef4c6950ce3a.png)
