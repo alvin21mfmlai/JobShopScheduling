@@ -42,7 +42,8 @@ Total makespan of operation, C; minimize C
 
 〖minimize 〗⁡C
 subjected to: 
-x_(σ_(h-1)^j,j)+p_(σ_(h-1)^j,j)≤x_(σ_h^j,j),                    ∀ j∈J;h∈(2,…,|M|)
+
+$x_(σ_(h-1)^j,j)+p_(σ_(h-1)^j,j)≤x_(σ_h^j,j),                    ∀ j∈J;h∈(2,…,|M|)$
 x_(m,j)+p_(m,j)≤x_(m,k)+V(1-z_(m,j,k) ),                    ∀ j,k∈J,j≠k;m∈M
 z_(m,j,k)+z_(m,k,j)=1,                    ∀ j,k∈J,j≠k;m∈M
 x_(σ_(|M|)^j,j)+p_(σ_(|M|)^j,j)≤C,                    ∀ j∈J
