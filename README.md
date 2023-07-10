@@ -1,7 +1,5 @@
 # JobShopScheduling
 
-This reprository provides an overview on the traditional job shop scheduling problem, and the common models (disjunctive and time-indexed) adopted to solve the problem. 
-
 ## 1. Define the Job Shop Scheduling Problem:
   - Input: A set of jobs J = {J1, J2, ..., Jn} and a set of machines M = {M1, M2, ..., Mm}.
   - Each job Ji consists of a sequence of operations Oi = {O1i, O2i, ..., Oki}, where each operation Oji represents a task that needs to be processed on a specific machine.
