@@ -1,4 +1,4 @@
-# JobShopScheduling
+# JobShopScheduling (Jobs with Operations)
 
 ## 1. Define the Job Shop Scheduling Problem:
   - Input: A set of jobs J = {J1, J2, ..., Jn} and a set of machines M = {M1, M2, ..., Mm}.
